@@ -272,19 +272,3 @@ The RAG flow is:
 3. ChromaDB returns the most similar book chunks.
 4. Relevant chunks are inserted into an OpenAI prompt.
 5. OpenAI generates a contextual answer with source labels.
-
-## Notes
-
-- `books.toscrape.com` does not provide authors, so this project does not include an author field.
-- ChromaDB data is stored locally in `./chroma_db` by default.
-- `.env`, `venv`, `node_modules`, and generated vector data are ignored by Git.
-
-## Submission Checklist
-
-- Add 3-4 screenshots to the README.
-- Confirm backend starts with `python manage.py runserver`.
-- Confirm frontend starts with `npm run dev`.
-- Scrape sample books.
-- Ask sample questions through the UI.
-- Push code to GitHub.
-- Submit the GitHub repository link in the assignment form.
